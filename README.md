@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <a href="https://goguide.netlify.app">Demo</a>
+  <a href="https://t.me/GoGuideBot">Demo</a>
 </div>
 
 <h1 align="center">Travel Assistant Chatbot🤖</h1>
