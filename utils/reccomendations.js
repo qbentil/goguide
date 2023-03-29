@@ -1,0 +1,92 @@
+const options = [
+  {
+    name: "Golden Tulip Accra",
+    category: "Hotel",
+    location: "Accra",
+    description: "4-star hotel in Accra",
+  },
+  {
+    name: "Kwame Nkrumah Memorial Park",
+    category: "Attraction",
+    location: "Accra",
+    description: "Memorial park and mausoleum in Accra",
+  },
+  {
+    name: "Buka Restaurant",
+    category: "Restaurant",
+    location: "Accra",
+    description: "Nigerian restaurant in Accra",
+  },
+  {
+    name: "Mövenpick Ambassador Hotel Accra",
+    category: "Hotel",
+    location: "Accra",
+    description: "5-star hotel in Accra",
+  },
+  {
+    name: "Cape Coast Castle",
+    category: "Attraction",
+    location: "Cape Coast",
+    description: "Historic castle in Cape Coast",
+  },
+  {
+    name: "Lodge of Dreams",
+    category: "Hotel",
+    location: "Cape Coast",
+    description: "Hotel in Cape Coast",
+  },
+  {
+    name: "Oasis Beach Resort",
+    category: "Hotel",
+    location: "Cape Coast",
+    description: "Resort in Cape Coast",
+  },
+  {
+    name: "Chop Time Restaurant",
+    category: "Restaurant",
+    location: "Cape Coast",
+    description: "Ghanaian restaurant in Cape Coast",
+  },
+  {
+    name: "Kakum National Park",
+    category: "Attraction",
+    location: "Cape Coast",
+    description: "National park in Cape Coast",
+  },
+  {
+    name: "Labadi Beach Hotel",
+    category: "Hotel",
+    location: "Labadi",
+    description: "Beachfront hotel in Labadi",
+  },
+  {
+    name: "Kpando Pottery Village",
+    category: "Attraction",
+    location: "Volta",
+    description: "Pottery village in Volta",
+  },
+  {
+    name: "Falls View Restaurant",
+    category: "Restaurant",
+    location: "Volta",
+    description: "Restaurant with a view of a waterfall in Volta",
+  },
+  {
+    name: "Keta Beach Resort",
+    category: "Hotel",
+    location: "Volta",
+    description: "Beach resort in Volta",
+  },
+  {
+    name: "Tafi Atome Monkey Sanctuary",
+    category: "Attraction",
+    location: "Volta",
+    description: "Monkey sanctuary in Volta",
+  },
+  {
+    name: "Kwahu Easter Festival",
+    category: "Attraction",
+    location: "Eastern",
+    description: "Annual Easter festival in Eastern",
+  },
+];
