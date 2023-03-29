@@ -46,9 +46,9 @@ bot.on("text", (ctx) => {
       ctx.reply(`Great! Your location is ${message}. What's your destination?`);
     } else {
       ctx.reply(
-        `Sorry, we do not provide service in ${message}. Please provide a valid location from our list of cities: \n [${cities.join(
-          ", "
-        )}]`
+        `Sorry, we do not provide service in ${message}. Please provide a valid location from our list of cities: \n [${cities
+          .map((city) => city.name)
+          .join("\n")}]`
       );
     }
   } else if (awaitingDestination) {
@@ -62,9 +62,9 @@ bot.on("text", (ctx) => {
       );
     } else {
       ctx.reply(
-        `Sorry, we do not provide service in ${message}. Please provide a valid location from our list of cities: \n [${cities.join(
-          ", "
-        )}]`
+        `Sorry, we do not provide service in ${message}. Please provide a valid location from our list of cities: \n [${cities
+          .map((city) => city.name)
+          .join("\n")}]`
       );
     }
   } else if (awaitingRideOption) {
@@ -174,7 +174,6 @@ function makeChoice(userData) {
     counter++;
   });
 
-
   // Estimate the time and cost of the trip based on the ride option and distance between the two cities
   const distance = location.distanceTo[userData.destination.split(" ")[0]];
   console.log("distance", distance);
@@ -190,17 +189,22 @@ function makeChoice(userData) {
     time = distance / 100;
     cost = distance * 1;
   }
-  
-  response+=`\n\n============ ESTIMATIONS ==============`;
-  response+= `\nLocation: ${userData.location}`;
-  response+= `\n Destination: ${userData.destination}`;
-  response+= `\n Ride Option: ${userData.rideOption == 1 ? "Uber" : userData.rideOption == 2 ? "Bus" : "Private Car"}`;
-  response+= `\n Distance: ${distance} km`;
+
+  response += `\n\n============ ESTIMATIONS ==============`;
+  response += `\nLocation: ${userData.location}`;
+  response += `\n Destination: ${userData.destination}`;
+  response += `\n Ride Option: ${
+    userData.rideOption == 1
+      ? "Uber"
+      : userData.rideOption == 2
+      ? "Bus"
+      : "Private Car"
+  }`;
+  response += `\n Distance: ${distance} km`;
   response += `\nEstimated time: ${time.toFixed(2)} hours`;
   response += `\nEstimated cost: GHC${cost.toFixed(2)}`;
-  response+=`\n\n=======================================`;
-  
-  
+  response += `\n\n=======================================`;
+
   return response;
 }
 
