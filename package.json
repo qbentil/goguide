@@ -5,7 +5,8 @@
   "main": "bot.js",
   "type": "module",
   "scripts": {
-    "bot": "nodemon bot.js"
+    "bot": "nodemon bot.js",
+    "start": "node bot.js"
   },
   "keywords": [],
   "author": "",
